@@ -1,12 +1,6 @@
 #include <stdio.h>
 
-void swapp(int ara[], int ara[])
-{
-    int temp;
-    temp=ara[x];
-    ara[x]=ara[x+1];
-    ara[x+1]=temp;
-}
+void swapp(int* x, int* y);
 
 int main ()
 {
@@ -30,5 +24,20 @@ int main ()
         }
     }
 
+    for (int i=0; i<n; i++)
+    {
+        printf("%d ",ara[i]);
+    }
+
     return 0;
+}
+
+void swapp(int* x, int* y)
+{
+    {
+        int temp;
+        temp=*x;
+        *x=*y;
+        *y=temp;
+    }
 }

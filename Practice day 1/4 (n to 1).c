@@ -2,8 +2,7 @@
 
 void n_to_one(int n)
 {
-    n_to_one(n_to_one-1);
-    printf("%d ",n_to_one);
+    printf("%d ",n_to_one(1-n_to_one));
 }
 
 int main ()
